@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Web and HTML in a nutshell</title>
+  </head>
+  <body>
+    <h1>Basics of the World Wide Web</h1>
+    <div>
+      <h3>Some "Web jargon" simplified:</h3>
+      <div>
+        <p>
+          <b>HTML documents:</b> This is the main type of document on the Web.
+          They are what holds the Web together!<br>
+          <b>URL's:</b> Think of these as the "addresses" or "names" of your
+          documents. You use a URL to refer to a document, like you would<br> use a
+          friend's name, to refer to them!<br>
+          <b>HTTP:</b> This is the protocol with which different "parts" of the Web
+          communicate.<br>
+          <b>Web applications:</b> These are what really matter in the end.
+          Think of them as the paint that makes a painting, on a white canvas.
+        </p>
+      </div>
+      <h3>What exactly <em>is</em> the Web?</h3>
+      <div>
+        <p>
+          The Web is mainly composed of a bunch of HTML documents.
+          (HTML stands for <b>H</b><em>yper</em><b>T</b><em>ext</em> <b>M</b><em>arkup
+          </em> <b>L</b><em>anguage).</em>
+          These HTML documents<br> are "linked" together, and the "links" that connect
+          them are called <b>hyperlinks</b>.
+          This "linking" is what makes the Web "web-like"!<br>You can link a bunch of
+          other documents and files to the HTML documents, but the HTML documents are
+          the main building blocks of the Web.
+        </p>
+      </div>
+      <h3>The major components of the Web</h3>
+      <div>
+        <p>
+          <b>You:</b> You type something into your..</br>
+          <b>Computer and browser:</b> Your computer is running the web browser that
+          you type into. (Examples of browsers are Chrome, Firefox, Safari, you<br>
+          know). So, your computer sends your <em>requests</em> (using the protocol
+          called HTTP that we mentioned earlier) via the...<br>
+          <b>Internet:</b> The requests are sent via the Internet to...<br>
+          <b>Servers:</b> The servers respond to your requests by sending back
+          <em>files</em>, via the internet, to your computer and browser, delivering
+          them to you! <br>("Servers" are basically some other computers sitting
+          somewhere else in a closet, <em>hosting</em> files, as opposed to your
+          computer that you use to <em>browse</em><br> files.
+          Don't let the big words get to you.)
+        </p>
+      </div>
+      <h3>HTML - up close and personal!</h3>
+      <div>
+        <p>
+          HTML is the core of the Web, but what's it made of? Well, it's made up
+          of:<br>
+          <b>Text content:</b> This is the writing you see.<br>
+          <b>Mark up:</b> This is how this writing is displayed.<br>
+          <b>References to other documents:</b> Like references to videos or
+          pictures.<br>
+          <b>Links to other pages:</b> Which are..well...links to other pages.
+          Pretty obvious stuff.
+        </p>
+        <p>
+          Ok, let's dive deeper in! So, if you type text in an HTML editor then render
+          it, it comes out looking the same, nothing fancy happens.<br> However, if
+          you want the typed text to look different, you should use..
+        </p>
+      </div>
+      <h4>Mark up</h4>
+      <div>
+        <p>
+          HTML mark up is made up of things called <b>tags</b>. A tag is written in
+          between a "lesser than" symbol and a "greater than" symbol. Here's an
+          example:<br>
+          &lt;tag&gt; content &lt;/tag&gt;<br>
+          The first tag is called the <em>opening tag</em>, and the last tag is the
+          <em>closing tag</em>. The name of the tag is the same both for opening and
+          closing, but the name<br> in the closing tag has a slash "/" typed before
+          it. The word "content" in the example refers to what you are
+          trying to use mark up for. The content can be<br> text, or it can even be
+          other tags! The entire thing, meaning the opening tag, content, and the
+          closing tag, is referred to as "the element".
+        </p>
+      </div>
+      <h4>Different types of tags:</h4>
+      <div>
+        <p>
+          <b>The &lt;b&gt; tag:</b>"b" stands for "bold", and that's what it does to
+          <b>contents</b> of the element! So, to make the word "contents" appear in
+          bold, I typed<br> something like this: &lt;b&gt;contents&lt;/b&gt; . That
+          made it become bold!<br>
+          <b>The &lt;em&gt; tag:</b>"em" stands for "emphasis". This tag makes content
+          <em>italic</em>.
+          So, guess what happens if you miss the closing end tag? The mark up<br> that
+          the tag performs is implemented for everything that comes after it.
+          What do we learn from this? <b>Be careful!</b> Your computer only implements
+          <br>what you tell it to do!
+        </p>
+      </div>
+      <h4>HTML attributes:</h4>
+      <div>
+        <p>
+          Let's represent this as follows:<br>
+          &lt;tag ATTR = "value"&gt; content &lt;/tag&gt;<br>
+          In this example, we have the opening and closing tags as we've previously
+          mentioned, but the tag has an attribute, which in this case has been given
+          <br>the name ATTR. Tags can have multiple attributes, and as you can see,
+          attributes have values.<br>
+          An example of a tag that has an atttrubute is:<br>
+          <b>The &lt;a&gt; tag:</b>"a" stands for "anchor". This kind of tag is used to
+          make links. An anchor tag looks something like this:<br>
+          &lt;a href = "https://www.udacity.com"&gt;education&lt;/a&gt;<br>
+          In the above example, <b>href</b> is the attribute, its value is a
+          <b>URL</b> which in this case is www.udacity.com , and the <b>content</b>
+          is the word "education".<br> If this anchor tag was rendered into HTML, we would
+          see the word "education" having become a link, to the URL of the udacity
+          website.<br> This is what it would become:
+            <span>
+              <a href="https://www.udacity.com">education</a>
+            </span>.
+          Go ahead and click it!<br>
+          <b>The < img > tag:</b> "img" stands for image. This is the tag you use to
+          make a link to an image, and it looks something like this:<br>
+          &lt;img src ="url" alt="text"&gt;<br>
+          In this case, the attribute is <b>src</b>, which stands for source, and the
+          value of this attribute is a <b>URL</b> to the image you want to show.<br>
+          The other attribute in this element is the <b>alt</b> tag, wich stands for
+          alternate. The value of the alt is text that gets displayed in case of
+          broken requests,<br> such as when the image does not load, or if the
+          user is a blind person.
+          Note that image tags are <b>void</b> tags. This means that they do not have
+          "content"<br> like we've seen in other kinds of tags. Since image tags have
+          no "content", hence they also have no closing tag.<br>
+          Let's say I wanted to make an image tag for a picture of the Space Needle
+          in Seattle, my image tag would look something like this:<br>
+          &lt;img src=
+          "https://upload.wikimedia.org/wikipedia/en/4/4f/Seattle_Space_Needle_Crop.jpg"
+          alt = "Seattle Space Needle"&gt; .<br>
+          Here's what happens when I render it into HTML:<br>
+            <span>
+              <img src=
+              "https://upload.wikimedia.org/wikipedia/en/4/4f/Seattle_Space_Needle_Crop.jpg"
+              alt = "Seattle Space Needle">
+            </span>.
+          Pretty cool stuff!
+        </p>
+      </div>
+      <h4>Whitespace</h4>
+      <div>
+        <p>
+          When we type several lines of text in an HTML editor, for example, and
+          you put multiple spaces or empty lines in the middle of your text, when you
+          render<br> it into HTML, the result will be one long line of text. This is
+          what is called <b>Whitespace</b>. It can be avoided by using a
+          <b>< br > tag</b>, which is a <b>break tag</b><br>. Put those in your text
+          in your HTML editor at the points where you want your sentences to break
+          (when rendered), and the text will continue on a new line.<br> Here's an
+          <br> example <br> of what <br> the &lt;br&gt; tag <br> can do! As you can
+          see, the break tag is a <b>void</b> tag, like the image tag. You can also
+          start new lines by using the <b>&lt;p&gt; tag</b>, and "p" stand for
+          "paragraph".<br> The p tag however is not a void tag, since there is
+          content in this "element", and the content is basically the text of the
+          paragraph itself.
+        </p>
+      </div>
+      <h4> Inline and block elements:</h4>
+      <div>
+        <p>
+          Examples of inline elements are &lt;br&gt;, &lt;b&gt;, &lt;em&gt;, and
+          &lt;img&gt; tags. The reason is that they all just have their effect in
+          the middle of the text when rendered<br> into HTML. An example of a block
+          element is the &lt;p&gt; tag, since it doesn't just make a break in the
+          text to start the following text on a new line like a &lt;br&gt; tag would.
+          <br> The &lt;p&gt; tag actually forms something like an invisible box that
+          has height and width, and this box contains text in it.
+        </p>
+      </div>
+      <h4>Span and Div elements:</h4>
+      <div>
+        <p>
+          <b>Span</b> is an inline element, and <b>Div</b> is a block element. Both
+          of them are container elements, since they contain their content.
+          Styles can be attached to both of them<br> to adjust how they display their
+          content. To show the difference, I will use both the span and div elements
+          on identical sentences, as follows:
+          <br>
+          <br>
+          <span>Perhaps one day I will become</span> a successful software developer!
+          <br>
+          <div>Perhaps one day I will become</div> a successful software developer!
+          <br>
+          <br>
+          The first sentence shows the effect of the span element on the "Perhaps
+          one day I will become" segment of the sentence, while the second sentence
+          shows<br> the effect of the div element on the same portion of the sentence.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>The composition of websites</h3>
+      <div>
+        <p>
+          Websites are composed of:<br>
+          <dl>
+            <dt>HTML files:</dt>
+            <dd>which for them framework</dd>
+          <b>HTML files</b>: which form the framework or structure of the
+          website, like the walls of a house.<br>
+          <b>CSS files</b>: which does the styling of the website.<br>
+          <b>Javascript files</b>: which are the interactive components of the
+          website, that change some of its elements. <br>
+          <b>Web tools</b>: which are used to help build websites.<br>
+        </p>
+      </div>
+      <h3>A look at webpage structure</h3>
+      <div>
+        <p>
+          When looking at the elements of a webpage, you don't see the actual
+          code, but you see the structure of the page. As you move your mouse
+          over any given element of the page, the segment of the page which each
+          element represents become highlighted. when you click on the triangle
+          to the left of an element, it expands, and you can continue going
+          deeper into the element until you see the actual text that appears on
+          the page. Note that not all elements are actually visible on the page,
+          but all elements are rectangular.
+        </p>
+        <p>
+          It is notable that the structure of the page is a <b> tree-like
+          structure</b>, and the technical term for this tree-like structure is
+          <b>DOM</b>, which stands for <b>Document Object Model</b>.Each
+          sideways triangle in this structure is an HTML element. Each one of
+          these elements has an opening tag and a closing tag, and the contents
+          of each element can be text or can be another element.<br>
+        </p>
+      </div>
+      <h3>HTML-CSS-DOM</h3>
+      <div>
+        <p>
+          So, how do these three, meaning HTML, CSS, and DOM work together?
+          Well, the web broswer turns HTML tags into elements in a tree, and it
+          knows how to do that because of DOM. Each tag has a name or type that
+          dfines what kind of element will be created. Also, each tag can have
+          attributes with values. The HTML document written defines the
+          structure and content of the page, while CSS defines the style. CSS
+          allows you to use specific syntax and rules to determine how elements
+          look on a page.
+        </p>
+      </div>
+      <h3>Design on webpages</h3>
+      <div>
+        <p>
+          Every element on a webpage is in a box. Even though some elements may
+          <em>look</em> like they have other shapes, such as a circle, but they
+          are still actually just boxes. The circle shape is actually just a
+          style that is used to display the box as a circle. To see the
+          style used to display a particular element, open up developer tools on
+          the webpage, highlight the element, and that will display the style
+          used for it on the style panel. If you change the style, the way the
+          element is displayed immediately changes.
+        </p>
+      </div>
+      <h3>Boxifying design</h3>
+      <div>
+        <p>
+          When presented with a webpage design, a person should draw a box
+          around every visual element until there's just one element in each
+          box. Then, boxes can be transferred to an HTML document by defining
+          each box with a &lt;div&gt; tag, and then putting in some place-holder
+          content into each &lt;div&gt; element, to remember which box each tag
+          refers to. Then, each tag should be marked to remember to apply
+          style to it later, and this is done by giving a <b>class attribute</b>
+          to each element. These class attributes are like labels on boxes,
+          that remind you what's inside them. HTML tags can belong to multiple
+          classes, so each element can be given more than one class attribute.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
